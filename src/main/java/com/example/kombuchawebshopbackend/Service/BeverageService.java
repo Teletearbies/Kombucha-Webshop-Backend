@@ -12,6 +12,7 @@ public class BeverageService {
 
     private final BeverageRepository beverageRepository;
 
+    @Autowired
     public BeverageService(BeverageRepository beverageRepository) {
         this.beverageRepository = beverageRepository;
     }
