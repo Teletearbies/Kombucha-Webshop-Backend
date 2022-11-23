@@ -2,6 +2,7 @@ package com.example.kombuchawebshopbackend.Controller;
 
 import com.example.kombuchawebshopbackend.Entity.Beverage;
 import com.example.kombuchawebshopbackend.Service.BeverageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ public class BeverageController {
 
     private final BeverageService beverageService;
 
+    @Autowired
     public BeverageController(BeverageService beverageService) {
         this.beverageService = beverageService;
     }
