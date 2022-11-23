@@ -25,7 +25,7 @@ public class Beverage {
     @Column(length = 10)
     private double price;
 
-    @Column(length = 500)
+    @Column(length = 2000)
     private String description;
 
     @Column(length = 10)

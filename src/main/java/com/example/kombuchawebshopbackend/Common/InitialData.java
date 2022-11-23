@@ -16,10 +16,16 @@ public class InitialData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Beverage beverage1 = new Beverage("Green beans",50,"It tastes like fart", 10);
-        Beverage beverage2 = new Beverage("Pineapple",55,"Drank worse", 10);
+        Beverage beverage1 = new Beverage("Asparagus",50,"Asparagus is a unique type of kombucha. That's because, in contrast to other kombuchas, a majority of the liquid (but not all) actually comes from the kombucha fermentation. That means you get a softer, rounder flavor in Asparagus. This beverage is very good for you, and a great way to spice up your drinking routine.It is the closest drink to the elixir of life. Try it, you won't regret it!", 10);
+        Beverage beverage2 = new Beverage("Cherry",55,"This cherry based kombucha will blow your taste buds. The sweet cherry will bring a burst of tartness to the kombucha drinker. The cherry has a light honey flavor. As the cherry has so much sugar in it, it's best to keep it light in flavor. Personally I'd keep the cherry flavor on the light side. I'd mix it into a homemade soda. You can also add a little vanilla to enhance the taste of the kombucha. Either way, you'll love the taste of this kombucha.", 10);
+        Beverage beverage3 = new Beverage("Grapes",55,"This fermented grapes kombucha is almost like wine, but healthier. The extra sugar in the grape juice gives the finished product a very sweet taste and tingling on the tongue. It is a perfect daily refresher. Grapes and kombucha make a perfect natural blend for your health. Just mix the grapes, lemon juice and ice into a bubbly kombucha. Let sit for 5-10 minutes and boom your kombucha cocktail is ready.It helps you to fight in a natural way heart Disease. We highly recommend not to delay ordering this great drink!", 10);
+        Beverage beverage4 = new Beverage("Raspberry",55,"Raspberry! One of the most popular berry in the world. This healthy and absolutely fantastic tasting kombucha has some serious health benefits. It helps you to slow down the aging process, detoxifies, adds an extra dose of vitamin C and reduces inflammation. Also it is packed with nutrition. Your body can absorb 75% of raspberry on the first day. A daily dose of kombucha helps you to minimize the occurrence of acne and blemishes. This energizing berry kombucha can boost your energy, improve your mood and give you a healthy glow. It is a perfect cure for insomnia. Not only does raspberry help you to get rid of those unwanted pimples but also helps you to get rid of dark circles. It's benefits are endless. For more details on them read our blog page.", 10);
+        Beverage beverage5 = new Beverage("Strawberry",55,"One of our most popular kombucha is the strawberry one. It uses strawberries from our farm, which are canned on our farm. It is also 100% organic, and comes in a perfect size bottle for a very fair price. The strawberry kombucha is full of strawberries and also uses high quality fermentation microbes. The consistency is similar to a fruit smoothie. For more information about the strawberry kombucha feel free to contact Kalle. Order your strawberry kombucha from our website. It is guaranteed that you are going to love it.", 10);
 
         beverageRepository.save(beverage1);
         beverageRepository.save(beverage2);
+        beverageRepository.save(beverage3);
+        beverageRepository.save(beverage4);
+        beverageRepository.save(beverage5);
     }
 }
