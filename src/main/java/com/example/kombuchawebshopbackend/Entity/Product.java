@@ -12,8 +12,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "activity")
-public class Beverage {
+@Table(name = "product")
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,7 +32,7 @@ public class Beverage {
     private int quantity;
 
 
-    public Beverage(String name, double price, String description, int quantity) {
+    public Product(String name, double price, String description, int quantity) {
         this.name = name;
         this.price = price;
         this.description = description;
