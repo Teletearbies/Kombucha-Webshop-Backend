@@ -1,6 +1,8 @@
 package com.example.kombuchawebshopbackend.Common;
 
+import com.example.kombuchawebshopbackend.Entity.Blog;
 import com.example.kombuchawebshopbackend.Entity.Product;
+import com.example.kombuchawebshopbackend.Repository.BlogRepository;
 import com.example.kombuchawebshopbackend.Repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -9,9 +11,11 @@ import org.springframework.stereotype.Component;
 public class InitialData implements CommandLineRunner {
 
     ProductRepository productRepository;
+    BlogRepository blogRepository;
 
-    public InitialData(ProductRepository productRepository) {
+    public InitialData(ProductRepository productRepository, BlogRepository blogRepository) {
         this.productRepository = productRepository;
+        this.blogRepository = blogRepository;
     }
 
     @Override
@@ -27,5 +31,11 @@ public class InitialData implements CommandLineRunner {
         productRepository.save(product3);
         productRepository.save(product4);
         productRepository.save(product5);
+
+        Blog blog1 = new Blog("Hello World!","This is Kalle with the latest Kombucha news! Stay tuned!");
+        Blog blog2 = new Blog("No Update!", "No news, everything is cool!");
+
+        blogRepository.save(blog1);
+        blogRepository.save(blog2);
     }
 }
