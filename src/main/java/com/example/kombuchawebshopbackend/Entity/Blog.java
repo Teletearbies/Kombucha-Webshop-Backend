@@ -4,9 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Getter
 @Setter
@@ -20,8 +22,12 @@ public class Blog {
     private Long id;
 
     @Column
-    private Date date = new Date();
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate date = LocalDate.now();
 
+    @Column
+    @DateTimeFormat(pattern = "HH:mm")
+    private LocalTime time = LocalTime.now();
     @Column(length = 50)
     private String title;
 
@@ -31,5 +37,12 @@ public class Blog {
     public Blog(String title, String description) {
         this.title = title;
         this.description = description;
+    }
+
+    public Blog(String title, String description, LocalDate date, LocalTime time) {
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.time = time;
     }
 }

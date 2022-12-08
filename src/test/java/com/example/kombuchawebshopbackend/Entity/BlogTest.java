@@ -8,6 +8,6 @@ class BlogTest {
     @Test
     void createBlog() {
         Blog blog = new Blog();
-        System.out.println(blog.getDate());
+        System.out.println(blog.getDate() + " " + blog.getTime());
     }
 }
