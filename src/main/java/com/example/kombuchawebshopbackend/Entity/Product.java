@@ -28,14 +28,9 @@ public class Product {
     @Column(length = 2000)
     private String description;
 
-    @Column(length = 10)
-    private int quantity;
-
-
-    public Product(String name, double price, String description, int quantity) {
+    public Product(String name, double price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
-        this.quantity = quantity;
     }
 }
