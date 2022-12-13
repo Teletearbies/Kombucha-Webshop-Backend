@@ -21,8 +21,7 @@ public class WebConfig  {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http
-                .httpBasic()
+         /*       .httpBasic()
                 .and()
                 .authorizeHttpRequests()
                 .requestMatchers("/*.js").permitAll()
@@ -31,16 +30,24 @@ public class WebConfig  {
                 .requestMatchers( "/loginuser/**").permitAll()
                 .requestMatchers( "/products/**").permitAll()
                 .requestMatchers( "/blogs/**").permitAll()
+                .requestMatchers( "/.admin/**").permitAll()
                 .requestMatchers(HttpMethod.PUT).permitAll()
                 .requestMatchers(HttpMethod.DELETE).permitAll()
                 .requestMatchers(HttpMethod.POST).permitAll()
 
+
                 .anyRequest().authenticated()
 
                 .and()
-                .cors()
-                .disable();
+                .
+                .disable();*/
+
+        http.csrf().disable()
+                .authorizeHttpRequests()
+                .anyRequest().permitAll()
+                .and().httpBasic();
         return http.build();
+
     }
 
 

@@ -24,7 +24,7 @@ public class LoginController {
         this.userDetailsService = userDetailsService;
     }
 
-    @CrossOrigin(origins = "http://localhost:63342")
+
     @PostMapping("/loginuser")
    // @PreAuthorize("hasRole('ADMIN')")
     public String loginPost(@RequestBody LoginDTO loginDetails) {
