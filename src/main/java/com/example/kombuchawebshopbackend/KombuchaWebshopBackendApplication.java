@@ -9,5 +9,4 @@ public class KombuchaWebshopBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(KombuchaWebshopBackendApplication.class, args);
     }
-
 }
