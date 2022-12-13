@@ -29,11 +29,14 @@ public class WebConfig  {
                 .requestMatchers("/*.css").permitAll()
                 .requestMatchers("/*.images").permitAll()
                 .requestMatchers( "/loginuser/**").permitAll()
+                .requestMatchers( "/products/**").permitAll()
+                .requestMatchers( "/blogs/**").permitAll()
 
-                .anyRequest().authenticated();
+                .anyRequest().authenticated()
 
-//                .csrf().and().cors()
-//                .disable();
+                .and()
+                .cors()
+                .disable();
         return http.build();
     }
 
