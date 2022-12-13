@@ -31,6 +31,9 @@ public class WebConfig  {
                 .requestMatchers( "/loginuser/**").permitAll()
                 .requestMatchers( "/products/**").permitAll()
                 .requestMatchers( "/blogs/**").permitAll()
+                .requestMatchers(HttpMethod.PUT).permitAll()
+                .requestMatchers(HttpMethod.DELETE).permitAll()
+                .requestMatchers(HttpMethod.POST).permitAll()
 
                 .anyRequest().authenticated()
 
