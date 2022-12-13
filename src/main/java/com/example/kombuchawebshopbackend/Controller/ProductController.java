@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
 @RestController
 public class ProductController {
 
@@ -20,6 +19,7 @@ public class ProductController {
         this.productService = productService;
     }
 
+    @CrossOrigin(origins = "http://localhost:63342")
     @GetMapping("/products")
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
