@@ -10,8 +10,10 @@ public class InitialData implements CommandLineRunner {
 
     ProductRepository productRepository;
 
+
     public InitialData(ProductRepository productRepository) {
         this.productRepository = productRepository;
+
     }
 
     @Override
@@ -27,5 +29,6 @@ public class InitialData implements CommandLineRunner {
         productRepository.save(product3);
         productRepository.save(product4);
         productRepository.save(product5);
+
     }
 }
