@@ -35,10 +35,10 @@ public class InitialData implements CommandLineRunner {
         productRepository.save(product4);
         productRepository.save(product5);
 
-        Blog blog1 = new Blog("Hello World!", "This is Kalle with the latest Kombucha news! Stay tuned!This is Kalle with the latest Kombucha news! Stay tuned!This is Kalle with the latest Kombucha news! Stay tuned! This is Kalle with the latest Kombucha news! Stay tuned!This is Kalle with the latest Kombucha news! Stay tuned! This is Kalle with the latest Kombucha news! Stay tuned!This is Kalle with the latest Kombucha news! Stay tuned!", LocalDate.of(2022,12,1), LocalTime.of(8,10));
-        Blog blog2 = new Blog("No Update!", "No news, everything is cool! Get your Limited Kombucha today! ", LocalDate.of(2022,12,3), LocalTime.of(12,31));
-        Blog blog3 = new Blog("Some Update!", "Hi there, everything is still cool! Still waiting for the first customer! Anytime now!", LocalDate.of(2022,12,4), LocalTime.of(14,55));
-        Blog blog4 = new Blog("Is anyone here?", "Where are you guys at?!", LocalDate.of(2022,12,4), LocalTime.of(22,22));
+        Blog blog1 = new Blog("Hello World!", "This is Kalle with the latest Kombucha news! Stay tuned!This is Kalle with the latest Kombucha news! Stay tuned!Tis Kalle with the latest Kombucha news! Stay tuned!This is Kalle with the latest Kombucha news! Stay tuned! This is Kalle with the latest Kombucha n", LocalDate.of(2022,12,1), LocalTime.of(8,10));
+        Blog blog2 = new Blog("No Update!", "No news, everything is cool! Get your Limited edition Kombucha today! ", LocalDate.of(2022,12,3), LocalTime.of(12,31));
+        Blog blog3 = new Blog("Merry Christmas!", "Happy holidays everyone! Don't forget to keep warm with a nice beverage in this cold weather!", LocalDate.of(2022,12,24), LocalTime.of(14,55));
+        Blog blog4 = new Blog("Is anyone here?", "Where are you guys at?!", LocalDate.of(2022,12,27), LocalTime.of(22,22));
         blogRepository.save(blog1);
         blogRepository.save(blog2);
         blogRepository.save(blog3);
