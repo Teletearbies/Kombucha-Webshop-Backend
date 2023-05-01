@@ -15,6 +15,7 @@ The webshop allows Kalles Kombucha to expand their business by making it possibl
 To get started with the project, follow the steps below:
 
 1. Clone the repository: Start by cloning the repository onto your local machine. You can do this by running the following command in your terminal:
+
 2. Install Java: Before you can run the backend, you need to have Java installed on your machine. You can download the latest version of Java from the official website.
 
 3. Set up the database: The backend of this project project uses a MySQL database. You will need to set up a MySQL server on your machine and create a new database for the project. Once you have created the database, you can update the application.properties file with your database credentials.
