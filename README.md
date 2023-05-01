@@ -16,9 +16,11 @@ To get started with the project, follow the steps below:
 
 1. Clone the repository: Start by cloning the repository onto your local machine. You can do this by running the following command in your terminal:
 2. Install Java: Before you can run the backend, you need to have Java installed on your machine. You can download the latest version of Java from the official website.
+
 3. Set up the database: The backend of this project project uses a MySQL database. You will need to set up a MySQL server on your machine and create a new database for the project. Once you have created the database, you can update the application.properties file with your database credentials.
 
 4. Build the project: To build the backend, navigate to the root directory of the project in your terminal and run the following command: ./mvnw clean install
+
 This will build the project and download any necessary dependencies.
 
 5. Run the project: Once the project is built, you can run it by running the following command: ./mvnw spring-boot:run
