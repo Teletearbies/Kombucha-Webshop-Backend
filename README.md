@@ -22,8 +22,6 @@ To get started with the project, follow the steps below:
 
 4. Build the project: To build the backend, navigate to the root directory of the project in your terminal and run the following command: ./mvnw clean install
 
-This will build the project and download any necessary dependencies.
-
 5. Run the project: Once the project is built, you can run it by running the following command: ./mvnw spring-boot:run
 This will start the backend server and make it available at http://localhost:8080.
 
